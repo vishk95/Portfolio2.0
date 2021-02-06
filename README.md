@@ -1,1 +1,3 @@
-Vishal Kardam
+# Vishal Kardam
+### software developer | avid learner
+
