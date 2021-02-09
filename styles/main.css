@@ -1,6 +1,6 @@
 
 .navbar {
-    background:#b7b7a4;
+    background:#666;
 }
 
 .nav-link , .navbar-brand { 
@@ -12,7 +12,7 @@
 }
 
 .nav-link:hover { 
-    background: #f4f4f4; color: #b7b7a4; 
+    background: #f4f4f4; color: #666; 
 }
 
 .navbar-collapse { 
@@ -21,4 +21,42 @@
 
 .navbar-toggler {  
     background:#fff !important;
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient(90deg, hsla(58, 100%, 68%, 1) 0%, hsla(33, 100%, 53%, 1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1 {
+    color:#666 ;
+}
+.description p {
+    color:#fff;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+.description button {
+    border:1px  solid #F97300;
+    background:#F97300;
+    color:#fff;
 }
