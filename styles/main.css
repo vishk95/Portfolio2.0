@@ -52,10 +52,19 @@
 }
 
 .description p {
-    color:#666;
+    color: #f4f4f4;
     font-size: 20px;
-    width: 50%;
+    width: 55%;
     line-height: 1.5;
+}
+
+.description span {
+    display: inline-block;
+    background-color:#66666686;
+    color: #f4f4f4;
+    margin: .1rem;
+    line-height: 2.5rem;
+    padding: 0 0.5rem;
 }
 
 .description button {
