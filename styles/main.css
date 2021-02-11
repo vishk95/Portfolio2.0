@@ -1,3 +1,19 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p, a, ul, ol, dl {
+    font-size: 1.5rem;
+}
+
+li, p {
+    line-height: 1.5;
+}
 
 .navbar {
     background:#666;
@@ -8,7 +24,7 @@
 }
 
 .nav-link { 
-    margin-right: 1em !important;
+    margin-right: 1rem !important;
 }
 
 .nav-link:hover { 
@@ -44,16 +60,18 @@
     position: absolute;
     top: 30%;
     margin: auto;
-    padding: 2em;
+    padding: 2rem;
 }
 
 .description h1 {
     color:#2B2B2B ;
+    font-size: 5rem;
+    margin-bottom: 1rem;
 }
 
 .description p {
     color: #f4f4f4;
-    font-size: 20px;
+    font-size: 2rem;
     width: 55%;
     line-height: 1.5;
 }
@@ -64,11 +82,31 @@
     color: #f4f4f4;
     margin: .1rem;
     line-height: 2.5rem;
-    padding: 0 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
-.description button {
-    border:1px  solid #F97300;
-    background:#F97300;
+.button {
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 2px solid #F97300;
+    box-sizing: inherit;
+    cursor: pointer;
+    color: #F97300;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.button:hover {
+    background-color: #F97300;
+    border-color: #F97300;
     color:#fff;
+    text-decoration: none;
+}
+
+.button:link {
+    text-decoration: none;
+}
+
+.button:visited {
+    text-decoration: none;
 }
