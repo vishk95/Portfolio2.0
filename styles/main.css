@@ -1,6 +1,12 @@
-html {
+html, body {
     font-size: 10px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: inherit;
 }
 
 h1 {
@@ -19,8 +25,25 @@ li, p {
     background:#666;
 }
 
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: inline-block;
+}
+
 .nav-link , .navbar-brand { 
-    color: #f4f4f4; cursor: pointer;
+    color: #f4f4f4; 
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-link { 
@@ -29,14 +52,6 @@ li, p {
 
 .nav-link:hover { 
     background: #f4f4f4; color: #666; 
-}
-
-.navbar-collapse { 
-    justify-content: flex-end;
-}
-
-.navbar-toggler {  
-    background:#fff !important;
 }
 
 .header {
