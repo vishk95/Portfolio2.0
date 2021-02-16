@@ -1,8 +1,18 @@
+:root {
+    --layout-color1: #e7e6e1;
+    --layout-color2: #f7f6e7;
+    --accent-orange-1minus: #f6c08d;
+    --accent-orange: #f2a154;
+    --accent-orange-1plus: #E47711;
+    --accent-marine: #314e52;
+  }
+
 html, body {
     font-size: 10px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: var(--layout-color2);
 }
 
 * {
@@ -22,41 +32,64 @@ li, p {
 }
 
 .navbar {
-    background:#666;
-}
-
-.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--accent-marine);
+    padding: 0 0 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar-nav {
+.navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+}
+
+.navbar-brand {
 }
 
 .nav-item {
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-link , .navbar-brand { 
-    color: #f4f4f4; 
+    color: var(--layout-color2); 
     cursor: pointer;
     text-decoration: none;
+    font-size: 1.8rem;
 }
 
 .nav-link { 
-    margin-right: 1rem !important;
+    padding: 0.5rem 1.5rem;
 }
 
-.nav-link:hover { 
-    background: #f4f4f4; color: #666; 
+.nav-item:hover { 
+    background-color: var(--accent-orange-1minus);
+    cursor: pointer;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+
+.nav-link:hover {
+    color: var(--accent-marine);
+    -webkit-transform: skewX(10deg);
+    -moz-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    transform: skewX(10deg);
 }
 
 .header {
     height: 100vh;
-    background: linear-gradient(90deg, hsla(58, 100%, 68%, 1) 0%, hsla(33, 100%, 53%, 1) 100%);
+    background: var(--layout-color2);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
