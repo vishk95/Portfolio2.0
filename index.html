@@ -16,12 +16,24 @@
 
     <!--link CSS and JS below-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <script src="#" defer></script>
+    <script src="scripts/index.js" defer></script>
     
     <title>Vishal Kardam</title>
 </head>
 <body>
-    <nav class="navbar">
+    <header class="header">
+        <!-- <div class="overlay"></div> -->
+        <div class="header-container">
+            <div class="header-description">
+                <h1>    Hey, I'm Vishal   </h1> 
+                 <p>  <span>  I realize design ideas into beautiful websites </span> <span> and create amazing systems. I like coding, movies and sports. </span> <span> Scroll down for more.</span></p>
+            </div>
+            <div class="header-button">
+                <a href="#contact"> <span>Let's</span> <span>Talk</span></a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar" id="navigation-bar">
         <a class="navbar-brand" href="#">Vish</a>
         <ul class="navbar-ul">
             <li class="nav-item">
@@ -38,18 +50,8 @@
             </li>
         </ul>
     </nav>
-    <header class="header">
-        <!-- <div class="overlay"></div> -->
-        <div class="container">
-            <div class="description">
-                <h1>    Hey, I'm Vishal   </h1> 
-                 <p>  <span>  I realize design ideas into beautiful websites </span> <span> and create amazing systems. I like coding, movies and sports. </span> <span> Let's get in touch.</span></p>   
-              <a href="#contact" class="button">Let's talk</a>  
-             </div>
-        </div>
-    </header>
     <main>
-        <section id="projects">
+        <section class="projects">
             <h2>Projects</h2>
             <p>These are some of my recent works.</p>
             <ul>
@@ -58,7 +60,7 @@
                 <li><a href="" target="_blank">Calculator</a></li>
             </ul>
         </section>
-        <section id="contact">
+        <section class="contact">
             <h2>Contact</h2>
             <p>Lets work together. Feel free to <a href="mailto:vishalat1994@gmail.com?body=Hey%20Vishal%20">Email</a> me.</p>
         </section>

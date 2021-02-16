@@ -31,16 +31,99 @@ li, p {
     line-height: 1.5;
 }
 
+.header-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--accent-orange);
+}
+
+.header-description {
+    padding: 2rem;
+    margin-bottom: 5%;
+}
+
+.header-description h1 {
+    color:var(--accent-marine) ;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.header-description span {
+    display: block;
+    width: fit-content;
+    background-color:#66666686;
+    color: #f4f4f4;
+    font-size: 2rem;
+    margin: .1rem;
+    line-height: 2.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.header-button {
+    width: 12rem;
+    height: 12rem;
+    border: 2px solid var(--accent-marine);
+    border-radius: 50%;
+    box-sizing: inherit;
+    cursor: pointer;
+    color: var(--accent-marine);
+}
+
+.header-button:hover {
+    background-color: var(--accent-orange-1plus);
+    border-color: var(--accent-orange-1plus);
+    color: var(--layout-color1);
+    text-decoration: none;
+}
+
+.header-button > a {
+    width: inherit;
+    height: inherit;
+    margin: -2px 0 0 -2px;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--accent-marine);
+}
+
+.header-button > a > span{
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}    
+
+.header-button > a:hover {
+    color: var(--layout-color2);
+}    
+
+.header-button > a:link {
+    text-decoration: none;
+}
+
+.header-button > a:visited {
+    text-decoration: none;
+}
+
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
     z-index: 5;
     background-color: var(--accent-marine);
     padding: 0 0 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar-ul {
@@ -87,74 +170,6 @@ li, p {
     transform: skewX(10deg);
 }
 
-.header {
-    height: 100vh;
-    background: var(--layout-color2);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-.overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244, 244, 244, 0.79);
-}
-
-.description {
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2rem;
-}
-
-.description h1 {
-    color:#2B2B2B ;
-    font-size: 5rem;
-    margin-bottom: 1rem;
-}
-
-.description p {
-    color: #f4f4f4;
-    font-size: 2rem;
-    width: 55%;
-    line-height: 1.5;
-}
-
-.description span {
-    display: inline-block;
-    background-color:#66666686;
-    color: #f4f4f4;
-    margin: .1rem;
-    line-height: 2.5rem;
-    padding: 0 0.5rem 0.5rem 0.5rem;
-}
-
-.button {
-    text-decoration: none;
-    padding: 12px 20px;
-    border: 2px solid #F97300;
-    box-sizing: inherit;
-    cursor: pointer;
-    color: #F97300;
-    display: inline-block;
-    font-size: 2rem;
-}
-
-.button:hover {
-    background-color: #F97300;
-    border-color: #F97300;
-    color:#fff;
-    text-decoration: none;
-}
-
-.button:link {
-    text-decoration: none;
-}
-
-.button:visited {
-    text-decoration: none;
+.projects, .contact {
+    height: 200vh;
 }
