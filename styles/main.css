@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 :root {
     --layout-color1: #e7e6e1;
     --layout-color2: #f7f6e7;
@@ -17,6 +19,7 @@ html, body {
 
 * {
     box-sizing: inherit;
+    font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 h1 {
@@ -76,13 +79,19 @@ li, p {
     margin-bottom: 1rem;
 }
 
-.header-description span {
+.header-description h1 span {
+    display: block;
+    font-size: 6rem;
+    line-height: 7.5rem;
+}
+
+.header-description p span {
     display: block;
     width: fit-content;
     background-color:#66666686;
     color: #f4f4f4;
     font-size: 2rem;
-    margin: .1rem;
+    margin: 0.75rem;
     line-height: 2.5rem;
     padding: 0 0.5rem 0.5rem 0.5rem;
 }
@@ -91,11 +100,12 @@ li, p {
     width: 12rem;
     height: 12rem;
     border: 2px solid var(--accent-marine);
+    margin: 0 2rem 2rem 2rem;
     border-radius: 50%;
     box-sizing: inherit;
     cursor: pointer;
     color: var(--accent-marine);
-    transition-property: border-color background-clor;
+    transition-property: border-color background-color;
     transition-duration: 1s;
     transition-timing-function: ease;
 }
@@ -140,8 +150,10 @@ li, p {
     text-decoration: none;
 }
 
+
+
 .navbar {
-    z-index: 5;
+    z-index: 3;
     background-color: var(--accent-marine);
     padding: 0 0 0 1rem;
     display: flex;
@@ -156,13 +168,15 @@ li, p {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 .nav-item {
     list-style-type: none;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+    transition-property: background-color transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 .nav-link , .navbar-brand { 
@@ -177,12 +191,15 @@ li, p {
 }
 
 .nav-item:hover { 
-    background-color: var(--accent-orange-1minus);
+    background-color: var(--accent-orange);
     cursor: pointer;
     -webkit-transform: skewX(-10deg);
     -moz-transform: skewX(-10deg);
     -ms-transform: skewX(-10deg);
     transform: skewX(-10deg);
+    transition-property: background-color transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 .nav-link:hover {

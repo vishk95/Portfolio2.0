@@ -13,11 +13,11 @@ function setSvgCenter() {
 setSvgCenter();
 
 headerButton.addEventListener("mouseover", function( event ) {
-  svgCircle.setAttribute("r", "4rem");
+  svgCircle.setAttribute("r", "5rem");
   setSvgCenter();
 }, false);
 
 headerButton.addEventListener("mouseleave", function( event ) {
-  svgCircle.setAttribute("r", "110%");
+  svgCircle.setAttribute("r", "120%");
   setSvgCenter();
 }, false);
