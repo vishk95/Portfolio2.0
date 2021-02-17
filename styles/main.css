@@ -95,14 +95,17 @@ li, p {
     box-sizing: inherit;
     cursor: pointer;
     color: var(--accent-marine);
+    transition-property: border-color background-clor;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 .header-button:hover {
-    background-color: var(--accent-orange-1plus);
-    border-color: var(--accent-orange-1plus);
-    color: var(--layout-color1);
-    text-decoration: none;
-
+    background-color: var(--accent-orange);
+    border-color: var(--accent-orange);
+    transition-property: border-color background-clor;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 .header-button > a {
@@ -126,7 +129,7 @@ li, p {
 }    
 
 .header-button > a:hover {
-    color: var(--layout-color2);
+    color: var(--accent-marine);
 }    
 
 .header-button > a:link {
@@ -144,10 +147,7 @@ li, p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -157,9 +157,6 @@ li, p {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.navbar-brand {
 }
 
 .nav-item {
