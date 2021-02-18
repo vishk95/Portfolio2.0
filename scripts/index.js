@@ -3,12 +3,12 @@ const headerButton = document.getElementById("headerButton");
 
 const svgCircle = document.getElementById("headerCircle");
 
-let centerX = headerButton.offsetLeft + headerButton.offsetWidth / 2;
-let centerY = headerButton.offsetTop + headerButton.offsetHeight / 2;
-
 function setSvgCenter() {
+  let centerX = headerButton.offsetLeft + headerButton.offsetWidth / 2;
+  let centerY = headerButton.offsetTop + headerButton.offsetHeight / 2;
   svgCircle.setAttribute("cx", centerX);
   svgCircle.setAttribute("cy", centerY);
+  console.log(centerX, centerY)
 }
 setSvgCenter();
 
