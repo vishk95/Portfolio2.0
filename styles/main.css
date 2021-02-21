@@ -348,6 +348,7 @@ li, p {
 }
 
 .contact > h1 {
+    padding-top: 2rem;
     color: var(--layout-color2);
     text-decoration: underline;
 }
@@ -384,3 +385,4 @@ li, p {
 .copyright {
     text-align: center;
 }
+
