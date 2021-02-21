@@ -48,7 +48,7 @@
                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgb(231, 230, 225)" />
                     <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(49, 78, 82, 0.5)" />
                     <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(49, 78, 82,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(49, 78, 82)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgb(49, 78, 82)" />
                 </g>
             </svg>
         </div>
@@ -60,10 +60,7 @@
                 <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -71,7 +68,7 @@
         </ul>
     </nav>
     <main>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio-heading">
                 <h1>Portfolio</h1>
             </div>
@@ -94,30 +91,40 @@
                     <h1>Pick a color</h1>
                     <p>A Vanilla JavaScript application that lets you pick a random color and copy its hexcode onto clipboard.</p>
                     <div class="project-button-wrapper project-button-wrapper-invert">
-                        <a class="project-button" href="" target="_blank">Live</a>
-                        <a class="project-button" href="" target="_blank">Code</a>
+                        <a class="project-button" href="https://vishk95.github.io/color-picker/" target="_blank">Live</a>
+                        <a class="project-button" href="https://github.com/vishk95/color-picker" target="_blank">Code</a>
                     </div>
                 </div>
                 <div class="project-imagebox">
                     <img src="/images/color-640.png" alt="color picker project screenshot">
                 </div>
             </div>
+            <div class="project-section">
+                <div class="project-imagebox">
+                    <img src="/images/pomodoro-640.png" alt="pomodoro project screenshot">
+                </div>
+                <div class="project-description">
+                    <h1>Pomodoro</h1>
+                    <p>A frontend web application built using ReactJS. Pomodoro let's you set a timer for an extreme focused productivity session. You can customize the clock up to your needs. </p>
+                    <div class="project-button-wrapper">
+                        <a class="project-button" href="https://vishk95.github.io/Pomodoro/" target="_blank">Live</a>
+                        <a class="project-button" href="https://github.com/vishk95/Pomodoro" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h1>Contact</h1>
             <p>Lets work together. Feel free to <a href="mailto:vishalat1994@gmail.com?body=Hey%20Vishal%20">Email</a> me.</p>
         </section>
-        <footer>
+        <footer class="footer">
             <ul>
                 <li><a href="https://www.linkedin.com/in/vishalkardam/">LinkedIn</a></li>
                 <li><a href="https://github.com/vishk95">GitHub</a></li>
                 <li><a href="mailto:vishalat1994@gmail.com?body=Hey%20Vishal%20">Email</a></li>
+                <li><p>© 2021 — Vishal Kardam</p></li>
             </ul>
         </footer>
-        <hr>
-        <div class="container">
-            <p>© 2021 — Vishal Kardam</p>
-        </div>
     </main>
 </body>
 </html>
